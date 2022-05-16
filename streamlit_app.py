@@ -12,9 +12,6 @@ from sklearn.metrics import confusion_matrix
 import streamlit as st
 
 
-sns.set_style("darkgrid")
-
-
 st.title("Failure Prediction App")
 
 
