@@ -48,7 +48,7 @@ print(lr.score(X_test, y_test))
 
 
 # Type = (st.number_input("Enter the Type of Machine"))
-TypeInput = st.selectbox("Select the Machine Type", 'M', 'L', 'H')
+TypeInput = st.selectbox("Select the Machine Type", ['M', 'L', 'H'])
 
 
 AirTemperature = (st.number_input("Enter the Air Temperature"))
