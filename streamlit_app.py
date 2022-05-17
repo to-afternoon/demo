@@ -65,10 +65,10 @@ ToolWear = (st.number_input("Enter the Tool Wear"))
 if (TypeInput == 'M'):
   Type = 2
 
-if (TypeInput == 'L'):
+elif (TypeInput == 'L'):
   Type = 1
 
-if (TypeInput == 'H'):
+elif (TypeInput == 'H'):
   Type = 0
   
 
@@ -117,17 +117,17 @@ if (st.button("Submit")):
   if (OutcomeType[0] == 0):
     st.info("Heat Dissipation Failure")
 
-  if (OutcomeType[0] == 1 or outcome[0] == 0):
+  elif (OutcomeType[0] == 1 or outcome[0] == 0):
     st.info("No Failure")
 
-  if (OutcomeType[0] == 2):
+  elif (OutcomeType[0] == 2):
     st.info("Overstrain Failure")
 
-  if (OutcomeType[0] == 3):
+  elif (OutcomeType[0] == 3):
     st.info("Power Failure")
 
-  if (OutcomeType[0] == 4):
+  elif (OutcomeType[0] == 4):
     st.info("Random Failure")
 
-  if (OutcomeType[0] == 5):
+  elif (OutcomeType[0] == 5):
     st.info("Tool Wear Failure")
