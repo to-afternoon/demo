@@ -47,7 +47,9 @@ lr.fit(X_train, y_train)
 print(lr.score(X_test, y_test))
 
 
-Type = (st.number_input("Enter the Type of Machine"))
+# Type = (st.number_input("Enter the Type of Machine"))
+TypeInput = st.selectbox("Select the Machine Type", "M", "L", "H")
+
 
 AirTemperature = (st.number_input("Enter the Air Temperature"))
 
@@ -59,6 +61,16 @@ Torque = (st.number_input("Enter the Torque"))
 
 ToolWear = (st.number_input("Enter the Tool Wear"))
 
+
+if (TypeInput == "M"):
+  Type = 2
+
+if (TypeInput == "L"):
+  Type = 1
+
+if (TypeInput == "H"):
+  Type = 0
+  
 
 outcome = lr.predict([[Type, AirTemperature, ProcessTemperature, RotationalSpeed, RotationalSpeed, ToolWear]])
 
