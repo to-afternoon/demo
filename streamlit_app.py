@@ -117,7 +117,7 @@ if (st.button("Submit")):
   if (OutcomeType[0] == 0):
     st.info("Heat Dissipation Failure")
 
-  if (OutcomeType[0] == 1):
+  if (OutcomeType[0] == 1 or outcome[0] == 0):
     st.info("No Failure")
 
   if (OutcomeType[0] == 2):
