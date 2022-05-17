@@ -72,7 +72,7 @@ if (TypeInput == 'H'):
   Type = 0
   
 
-outcome = lr.predict([[Type, AirTemperature, ProcessTemperature, RotationalSpeed, RotationalSpeed, ToolWear]])
+outcome = lr.predict([[Type, AirTemperature, ProcessTemperature, RotationalSpeed, Torque, ToolWear]])
 
 
 number = preprocessing.LabelEncoder()
