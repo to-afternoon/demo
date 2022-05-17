@@ -100,7 +100,7 @@ model.fit(X_train, y_train)
 print(model.score(X_test, y_test))
 
 
-OutcomeType = model.predict([[Type, AirTemperature, ProcessTemperature, RotationalSpeed, RotationalSpeed, ToolWear, outcome[0]]])
+OutcomeType = model.predict([[Type, AirTemperature, ProcessTemperature, RotationalSpeed, Torque, ToolWear, outcome[0]]])
 
 
 if (st.button("Submit")):
